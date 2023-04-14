@@ -9,7 +9,7 @@ if ('geolocation' in navigator) {
 
         const url = 'https://api.openweathermap.org/data/2.5/weather?lon=' + long + '&lat=' + lat + '&appid=dc7f65cfc963a0105bb137a39b73dbf4&units=metric';
 
-        // Instance AJAX object for interact with the server
+        // Instantiate the AJAX object to interact with the server
         let request = new XMLHttpRequest();
         request.open('GET', url);
         request.responseType = 'json';
